@@ -1,141 +1,385 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grow Your Business Online | Greywood</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Greywood is a digital studio crafting websites, social media, and brand identity that helps your business get noticed and grow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="#home" class="logo-area">
+                <img src="images/logomain.jpeg" alt="Greywood logo">
+                <span class="logo-text">Greywood</span>
+            </a>
 
-    <nav class="main-nav">
-    <div class="nav-links">
-        <a href="#logo">Home</a>
-        <a href="#solution">Solutions</a>
-        <a href="#feature">Featured Work</a>
-        <a href="#testimony">Testimonials</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <section class="hero-page">
-        <div id="logo" class="logo-area">
-            <img src="images/bgimg1.png" alt="Greywood Logo">
-            <!-- <span class="logo-text">GREYWOOD</span> -->
-        </div>
-        
-        <div class="content-wrapper">
-            <div class="text-block">
-                <h1>GROW YOUR BUSINESS ONLINE</h1>
-                <p>Connecting you with customers through websites and social media.</p>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#vision">Vision</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#remote">Remote Workers</a>
+                <a href="#work">Work</a>
+                <a href="#testimony">Testimonials</a>
+                <a href="#last">Contact</a>
+            </div>
+
+            <a href="#last" class="btn btn-dark nav-cta">
+                Start project
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="hero-page">
+            <div class="hero-inner">
+                <p class="eyebrow">Greywood Digital — Est. Kathmandu</p>
+                <h1>Grow your <em>business</em><br>online.</h1>
+                <p class="hero-sub">Connecting you with customers through thoughtful websites, sharp social media, and brand identity built to last.</p>
+
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-outline">See our work</a>
+                    <a href="#contact" class="btn btn-dark">
+                        Start a project
+                        <svg class="icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
             </div>
 
             <div class="feature-container">
                 <div class="feature-box">
-                    <svg class="feature-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="black" stroke-width="2"/><path d="M32 12V32L45 40" stroke="black" stroke-width="2" stroke-linecap="round"/></svg>
-                    <p>STOP WASTING TIME</p>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="black" stroke-width="1.6"/><path d="M12 7V12L15.5 14.5" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <h3>Stop wasting time</h3>
+                    <p>Launch in weeks, not months.</p>
                 </div>
                 <div class="feature-box">
-                    <svg class="feature-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="black" stroke-width="2"/><circle cx="32" cy="32" r="20" stroke="black" stroke-width="2"/><circle cx="32" cy="32" r="10" stroke="black" stroke-width="2"/></svg>
-                    <p>LOOKS PROFESSIONAL</p>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="black" stroke-width="1.6"/><circle cx="12" cy="12" r="5.5" stroke="black" stroke-width="1.6"/><circle cx="12" cy="12" r="2" stroke="black" stroke-width="1.6"/></svg>
+                    <h3>Look professional</h3>
+                    <p>Design that earns trust on first glance.</p>
                 </div>
                 <div class="feature-box">
-                    <svg class="feature-icon" viewBox="0 0 64 64" fill="none"><path d="M10 54V40H18V54H10Z" stroke="black" stroke-width="2"/><path d="M26 54V30H34V54H26Z" stroke="black" stroke-width="2"/><path d="M42 54V15H50V54H42Z" stroke="black" stroke-width="2"/></svg>
-                    <p>START SEEING RESULT</p>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><path d="M4 17L9 11L13 14L20 6" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6H20V12" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3>See results</h3>
+                    <p>Built to convert, not just to look pretty.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="aboutus">
-        <div class="con1">
-            <p class="small-text">We make smart moves and get results quickly.</p>
-            <h3>At Greywood, we help businesses grow through smart design, strategic storytelling, and a strong online presence. From stunning websites to scroll-stopping content, we make your brand impossible to ignore.</h3>
-        </div>
-    </section>
-
-    <section class="solutions-section">
-        <div class="sol-top">
-            <div class="sol-text">
-                <h2 id="solution">Solutions <br> designed for you</h2>
-                <p class="sub-h">We study your business so we can apply the right strategies.</p>
-                <p class="desc">At Greywood, we believe your business deserves solutions that fit perfectly. From custom websites and engaging social media campaigns to tailored digital strategies, we create experiences designed around you and your customers. Every project is crafted to strengthen your brand, boost your online presence, and make every interaction meaningful and impactful, helping your business grow with confidence.</p>
+        <!-- Vision -->
+        <section id="vision" class="vision-section">
+            <div class="vision-overlay"></div>
+            <div class="vision-content">
+                <p class="eyebrow eyebrow-light">Our vision</p>
+                <h2>We make <em>smart moves</em> and get results quickly. From stunning websites to scroll-stopping content, we make your brand <em>impossible to ignore</em>.</h2>
+                <a href="#solutions" class="btn btn-outline-light">Explore solutions</a>
             </div>
-            <div class="sol-img">
-                <img src="images/designedsoln.png" alt="Solutions">
-            </div>
-        </div>
-        <div class="sol-list-grid">
-            <ul>
-                <li>Custom Website Design</li>
-                <li>Responsive Web Development</li>
-                <li>Audience Reach Optimization</li>
-            </ul>
-            <ul>
-                <li>Social Media Post Design</li>
-                <li>Content Strategy & Planning</li>
-                <li>Branding & Visual Identity</li>
-            </ul>
-            <ul>
-                <li>SEO & Website Optimization</li>
-                <li>Analytics Tracking</li>
-                <li>Consultation & Support</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-    <section class="featured-work">
-        <h2 id="feature">Featured Work</h2>
-        <p>At Greywood, our work speaks for itself. From innovative website designs to engaging social media campaigns, we've helped businesses build stronger online identities and connect with their audiences.</p>
-        <div class="work-grid">
-            <img src="images/feature1.jpeg" alt="Work 1">
-            <img src="images/feature2.jpeg" alt="Work 2">
-            <img src="images/feature3.jpeg" alt="Work 3">
-        </div>
-    </section>
+        <!-- Solutions -->
+        <section id="solutions" class="solutions-section">
+            <div class="sol-top">
+                <div class="sol-text">
+                    <p class="eyebrow">01 — Solutions</p>
+                    <h2>Solutions <em>designed</em> for you.</h2>
+                    <p class="desc">We study your business so we can apply the right strategies. Every project is crafted to strengthen your brand, boost your online presence, and make every interaction meaningful.</p>
+                    <div class="sol-img">
+                        <img src="images/soln1.png" alt="Workspace with phone and notebook">
+                    </div>
+                </div>
 
-    <section class="testimonials">
-        <h2 id="testimony">What Our <br> Clients Say</h2>
-        <div class="testimonial-grid">
-            <div class="test-card">
-                <p>"Thanks a lot, Greywood! Now I have to hire two new employees just to handle all these new customers. Couldn't you have made my marketing a little less effective?" &#128521;</p>
-                <div class="client">
-                    <img src="images/female.png" alt="">
-                    <span><strong>Samira Arora</strong><br>Arya & Brar</span>
+                <div class="sol-list">
+                    <div class="sol-item">
+                        <div class="sol-item-head">
+                            <span class="sol-num">01</span>
+                            <svg class="icon-arrow-up" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Web Design &amp; Development</h3>
+                        <ul>
+                            <li>Custom Website Design</li>
+                            <li>Responsive Web Development</li>
+                            <li>Audience Reach Optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="sol-item">
+                        <div class="sol-item-head">
+                            <span class="sol-num">02</span>
+                            <svg class="icon-arrow-up" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Social Media &amp; Content</h3>
+                        <ul>
+                            <li>Social Media Post Design</li>
+                            <li>Content Strategy &amp; Planning</li>
+                            <li>Branding &amp; Visual Identity</li>
+                        </ul>
+                    </div>
+
+                    <div class="sol-item">
+                        <div class="sol-item-head">
+                            <span class="sol-num">03</span>
+                            <svg class="icon-arrow-up" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Growth &amp; Analytics</h3>
+                        <ul>
+                            <li>SEO &amp; Website Optimization</li>
+                            <li>Analytics Tracking</li>
+                            <li>Consultation &amp; Support</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="test-card">
-                <p>"Appreciate it, Greywood. My phone hasn't stopped buzzing since you revamped my website. Guess I'll never have a quiet lunch break again!" &#128514;</p>
-                <div class="client">
-                    <img src="images/male1.png" alt="">
-                    <span><strong>Rana Chaudhary</strong><br>Wintech Industries</span>
-                </div>
-            </div>
-            <div class="test-card">
-                <p>"Greywood completely ruined my peace and quiet. My posts are going viral, orders keep rolling in, and I actually have to work now. Thanks a bunch!" &#128514;</p>
-                <div class="client">
-                    <img src="images/male2.png" alt="">
-                    <span><strong>Daniel Gonsalves</strong><br>Randelo Co.</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact-section">
-        <div class="contact-content">
-            <h2 id="contact">Work with us</h2>
-            <div class="contact-info">
-                <p><strong>Greywood Digital</strong><br>Naxal, Kathmandu</p>
-                <p>Tel: +977 9817002899<br>Email: itsgreywood@gmail.com<br>Social: @its_greywood</p>
+        <!-- Remote Workers -->
+        <section id="remote" class="remote-section">
+            <div class="remote-top">
+                <div>
+                    <p class="eyebrow">Remote Workforce</p>
+                    <h2>Get work done <em>remotely</em>.</h2>
+                </div>
+                <p class="remote-sub">Hire skilled remote workers and virtual assistants at the cheapest rates. We match talent to your tasks so you scale faster.</p>
+            </div>
+
+            <div class="remote-grid">
+                <div class="remote-card">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><path d="M17 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="7" r="3.5" stroke="black" stroke-width="1.6"/><path d="M21 20v-1a4 4 0 0 0-3-3.87" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 3.6a3.5 3.5 0 0 1 0 6.8" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <h3>Dedicated Remote Staff</h3>
+                    <p>Hand-picked professionals assigned to your business needs.</p>
+                </div>
+                <div class="remote-card">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="7.5" width="17" height="12" rx="1.6" stroke="black" stroke-width="1.6"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5" stroke="black" stroke-width="1.6"/><path d="M3.5 12.5H20.5" stroke="black" stroke-width="1.6"/></svg>
+                    <h3>Skilled Virtual Assistants</h3>
+                    <p>Admin, support, and operations help so you can focus on growth.</p>
+                </div>
+                <div class="remote-card">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3V21" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 6.5H10a2.5 2.5 0 0 0 0 5H14a2.5 2.5 0 0 1 0 5H7" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3>Cheapest Rates</h3>
+                    <p>High-quality work at the most affordable prices in the market.</p>
+                </div>
+            </div>
+
+            <div class="remote-cta">
+                <a href="#last" class="btn btn-dark">
+                    Hire remote workers
+                    <svg class="icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <span>No commitments. Pay only for what you need.</span>
+            </div>
+        </section>
+
+        <!-- Featured Work -->
+        <section id="work" class="featured-work">
+            <div class="work-top">
+                <div>
+                    <p class="eyebrow">02 — Featured Work</p>
+                    <h2>Selected <em>projects</em>.</h2>
+                </div>
+                <p class="work-sub">Our work speaks for itself. From innovative website designs to social campaigns that move the needle.</p>
+            </div>
+
+            <div class="work-grid">
+                <figure class="work-card">
+                    <img src="images/feature1.jpeg" alt="Save The Date campaign artwork">
+                    <figcaption>
+                        <h3>Save The Date</h3>
+                        <p>Launch · Campaign — 2026</p>
+                    </figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="images/feature2.jpeg" alt="Creativity Mode social post">
+                    <figcaption>
+                        <h3>Creativity Mode</h3>
+                        <p>Social · Brand — 2026</p>
+                    </figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="images/feature3.jpeg" alt="Howard Ong DM mockup">
+                    <figcaption>
+                        <h3>Howard Ong DM</h3>
+                        <p>Social · Content — 2026</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Marquee strip -->
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>Websites</span><span class="diamond">✦</span>
+                <span>Brand Identity</span><span class="diamond">✦</span>
+                <span>Social Media</span><span class="diamond">✦</span>
+                <span>SEO</span><span class="diamond">✦</span>
+                <span>Content</span><span class="diamond">✦</span>
+                <span>Strategy</span><span class="diamond">✦</span>
+                <span>Websites</span><span class="diamond">✦</span>
+                <span>Brand Identity</span><span class="diamond">✦</span>
+                <span>Social Media</span><span class="diamond">✦</span>
+                <span>SEO</span><span class="diamond">✦</span>
+                <span>Content</span><span class="diamond">✦</span>
+                <span>Strategy</span><span class="diamond">✦</span>
             </div>
         </div>
-        <div class="contact-img">
-            <img src="images/footerimg.png" alt="Office">
+
+        <!-- Testimonials -->
+        <section id="testimony" class="testimonials">
+            <p class="eyebrow">03 — Testimonials</p>
+            <h2>What our <em>clients</em> say.</h2>
+
+            <div class="testimonial-grid">
+                <div class="test-card">
+                    <p>&ldquo;Thanks a lot, Greywood! Now I have to hire two new employees just to handle all these new customers. Couldn't you have made my marketing a little less effective?&rdquo;</p>
+                    <div class="client">
+                        <img src="images/female.png" alt="">
+                        <span><strong>Samira Arora</strong><br>Arya &amp; Brar</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>&ldquo;Appreciate it, Greywood. My phone hasn't stopped buzzing since you revamped my website. Guess I'll never have a quiet lunch break again.&rdquo;</p>
+                    <div class="client">
+                        <img src="images/male1.png" alt="">
+                        <span><strong>Rana Chaudhary</strong><br>Wintech Industries</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>&ldquo;Greywood completely ruined my peace and quiet. My posts are going viral, orders keep rolling in, and I actually have to work now. Thanks a bunch.&rdquo;</p>
+                    <div class="client">
+                        <img src="images/male2.png" alt="">
+                        <span><strong>Daniel Gonsalves</strong><br>Randelo Co.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+    <footer id="last" class="site-footer">
+        <div class="footer-form-wrap" id="footer-form">
+            <div class="footer-form-text">
+                <p class="eyebrow">Get in touch</p>
+                <h1 style="color: whitesmoke;">Let's work <em>together</em>.</h1>
+                <p style="color: aliceblue;">Have a project in mind? Tell us about it — we reply within one business day.</p>
+               <br>
+
+                <div>
+                    <p class="contact-div">Contact</p> <br>
+                    <p>
+                       Phone: <a href="tel:+9779817002899">+977 9817002899</a><br> <br>
+                        Email:<a href="mailto:itsgreywood@gmail.com">itsgreywood@gmail.com</a><br> <br>
+                       Socails: <a href="https://instagram.com/its_greywood">@its_greywood</a>
+                    </p>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-row">
+                    <label for="cf-email">Email</label>
+                    <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark form-submit">
+                    <span class="btn-label">Send message</span>
+                    <svg class="icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
         </div>
-    </section>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Greywood Digital. All rights reserved.</p>
+            <p>Crafted with care in Kathmandu.</p>
+        </div>
+    </footer>
+
+    <script>
+        const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbw_6hyQ0wFDA-XqIcUAt8qLm1revnFCl-D6GJLFXnECMI5q4UCFyTrwHzaujKWPWGPMYQ/exec";
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            status.textContent = '';
+            status.className = 'form-status';
+
+            const submitBtn = form.querySelector('.form-submit');
+            const label = submitBtn.querySelector('.btn-label');
+            const originalLabel = label.textContent;
+
+            const data = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                message: form.message.value.trim()
+            };
+
+            if (!data.name || !data.email || !data.message) {
+                status.textContent = 'Please fill in every field.';
+                status.classList.add('form-status-error');
+                return;
+            }
+
+            submitBtn.disabled = true;
+            label.textContent = 'Sending…';
+
+            try {
+                await fetch(SHEET_ENDPOINT, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(data)
+                });
+
+                status.textContent = "Thanks — we've got your message and will reply soon.";
+                status.classList.add('form-status-success');
+                form.reset();
+            } catch (err) {
+                status.textContent = 'Something went wrong. Please email us directly at itsgreywood@gmail.com.';
+                status.classList.add('form-status-error');
+            } finally {
+                submitBtn.disabled = false;
+                label.textContent = originalLabel;
+            }
+        });
+
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('nav-links-open');
+            navToggle.classList.toggle('nav-toggle-open', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('nav-links-open');
+                navToggle.classList.remove('nav-toggle-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 
 </body>
 </html>
