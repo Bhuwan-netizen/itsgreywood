@@ -828,6 +828,13 @@ h1 {
         justify-content: space-between;
         padding: 16px 6%;
     }
+    .btn{
+    position: relative;
+    right: 10px;
+    width: 140px;
+
+
+} 
 
     .nav-toggle {
         display: flex;
