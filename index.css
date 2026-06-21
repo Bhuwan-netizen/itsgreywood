@@ -81,6 +81,7 @@ img {
     flex-shrink: 0;
 }
 
+
 /* =========================================
    Buttons
    ========================================= */
@@ -161,8 +162,8 @@ img {
 }
 
 .logo-area img {
-    height: 28px;
-    width: auto;
+    height: 100px;
+    width: 100px;
 }
 
 .logo-text {
@@ -171,6 +172,17 @@ img {
     font-weight: 700;
     color: var(--ink);
 }
+
+.btn0{
+    text-decoration: none;
+    background: #000;
+    color: whitesmoke;
+    border-radius: 20px;
+    height:30px;
+    width: auto;
+    padding: 5px 10px;
+}
+
 
 .nav-links {
     display: flex;
@@ -819,22 +831,17 @@ h1 {
     color: rgba(255,255,255,0.55);
 }
 
-/* =========================================
-   Responsiveness
-   ========================================= */
+
 @media (max-width: 900px) {
     .main-nav {
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 16px 6%;
     }
-    .btn{
-    position: relative;
-    right: 10px;
-    width: 140px;
+.btn0{
+    height: 60px;
+}
 
-
-} 
 
     .nav-toggle {
         display: flex;
